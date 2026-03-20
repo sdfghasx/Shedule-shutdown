@@ -1,0 +1,4 @@
+eel
+plyer
+pystray
+Pillow

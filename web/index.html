@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Shutdown v1.0</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="stars"></div>
+
+    <div class="glass-card">
+
+        <!-- Шапка -->
+        <div class="header">
+            <span class="app-title">Schedule Shutdown</span>
+            <div class="menu-container">
+                <button class="menu-btn" id="menuBtn">⋮</button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <button class="dropdown-item" id="swapModeBtn">🔒 Lock Screen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Круговой таймер -->
+        <div class="timer-container">
+            <svg class="progress-ring" viewBox="0 0 150 150">
+                <circle class="progress-ring-bg" cx="75" cy="75" r="65" />
+                <circle class="progress-ring-fill" cx="75" cy="75" r="65" id="progressRing" />
+            </svg>
+            <div class="timer-text" id="timerText">30:00</div>
+        </div>
+
+        <!-- Кнопки ±15 -->
+        <div class="time-adjust-buttons">
+            <button class="adjust-btn" id="minus15Btn">−15</button>
+            <button class="adjust-btn" id="plus15Btn">+15</button>
+        </div>
+
+        <!-- Переключатель режима -->
+        <div class="mode-toggle">
+            <button class="mode-btn active" id="leftModeBtn" data-mode="sleep">Sleep</button>
+            <button class="mode-btn" id="rightModeBtn" data-mode="shutdown">Shutdown</button>
+        </div>
+
+        <!-- Слайдер -->
+        <div class="slider-container">
+            <input type="range" class="time-slider" id="timeSlider" min="1" max="480" value="30" step="1">
+            <div class="slider-labels">
+                <span>1 мин</span>
+                <span>480 мин</span>
+            </div>
+        </div>
+
+        <!-- Поле ввода -->
+        <div class="input-container">
+            <input type="text" class="time-input" id="timeInput" value="30" maxlength="3" inputmode="numeric">
+
+        </div>
+
+        <!-- Пресеты -->
+        <div class="presets">
+            <button class="preset-btn" data-minutes="15">15</button>
+            <button class="preset-btn" data-minutes="30">30</button>
+            <button class="preset-btn" data-minutes="45">45</button>
+            <button class="preset-btn" data-minutes="60">60</button>
+            <button class="preset-btn" data-minutes="90">90</button>
+        </div>
+
+        <!-- Кнопки действий -->
+        <div class="action-buttons">
+            <button class="btn-start" id="startBtn">Начать</button>
+            <button class="btn-cancel disabled" id="cancelBtn" disabled>Отменить</button>
+        </div>
+
+        <!-- Уведомления -->
+        <div class="notifications-toggle">
+            <span class="toggle-label">Уведомления</span>
+            <label class="switch">
+                <input type="checkbox" id="notificationsToggle">
+                <span class="slider-toggle"></span>
+            </label>
+        </div>
+
+    </div>
+
+    <script src="/eel.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

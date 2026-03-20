@@ -1,7 +1,7 @@
 # Schedule Shutdown v1.0
 
 <p align="center">
-  <img src="screenshots/preview.png" alt="Schedule Shutdown Preview" width="350">
+  <img src="[screenshots/preview.png](https://github.com/user-attachments/assets/b66f9bdc-9f64-40bf-925e-a9847fcc38b1)" alt="Schedule Shutdown Preview" width="350">
 </p>
 
 A beautiful Windows desktop application to schedule shutdown, sleep, or screen lock with a timer. Built with Python and Eel, featuring a glassmorphism UI with a starry Midnight Purple theme.

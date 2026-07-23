@@ -24,11 +24,11 @@ A beautiful Windows desktop application to schedule shutdown, sleep, or screen l
 ## 🚀 Installation
 
 ### Option 1: Installer (Recommended)
-Download the latest installer from [Releases](https://github.com/sdfghasx/Shedule-shutdown/releases) and run `ScheduleShutdownSetup.exe`.
+Download the latest installer from [Releases](https://github.com/sdfghasx/Schedule-shutdown/releases) and run `ScheduleShutdownSetup.exe`.
 
 ### Option 2: Run from source
 ```bash
-git clone https://github.com/sdfghasx/Shedule-shutdown.git
-cd Shedule-shutdown
+git clone https://github.com/sdfghasx/Schedule-shutdown.git
+cd Schedule-shutdown
 pip install -r requirements.txt
 python main.py
